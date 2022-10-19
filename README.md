@@ -1,5 +1,19 @@
 ![GitHub Logo](https://github.com/gnea/gnea-Media/blob/master/Grbl%20Logo/Grbl%20Logo%20250px.png?raw=true)
 
+# Building
+
+NB You can omit the PORT if it's ttyACM0
+
+## Ubuntu
+```
+sudo apt install avrdude gcc-avr avr-libc
+make clean
+make
+make flash PORT=/dev/ttyACM0
+```
+
+# Upstream Documentation
+
 ***
 _Click the `Release` tab to download pre-compiled `.hex` files or just [click here](https://github.com/gnea/grbl/releases)_
 ***
